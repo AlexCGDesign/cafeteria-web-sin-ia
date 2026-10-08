@@ -1,0 +1,123 @@
+:root {
+  /* Marca */
+  --color-primary: #7A4527;                        /* marrón café: botones, títulos */
+  --color-primary-hover: #643920;                  /* primario oscurecido */
+  --color-primary-active: #55301B;                 /* primario más oscuro */
+  --color-on-primary: #F7F0E6;                     /* texto sobre el marrón */
+
+  /* Fondos */
+  --color-bg: #E7DED2;                             /* beige de las secciones */
+  --color-surface: #FFFFFF;                        /* paneles blancos */
+  --color-surface-alt: #F7F0E6;                    /* crema de tarjetas y recuadros */
+  --color-dark: #2B1A10;                           /* espresso: footer y titulares de platos */
+
+  /* Texto */
+  --color-text: #3A2A20;
+  --color-text-muted: #4A3A2F;
+
+  /* Bordes y detalles */
+  --color-border: #CDBFAE;
+  --color-border-light: #DDD3C6;
+  --color-leader: #8A6A55;                         /* puntos guía de la carta */
+
+  /* ---------- Tipografía ---------- */
+
+  /* Familias: deben coincidir con las de Google Fonts en el HTML */
+  --font-display: "Gilda Display", Georgia, serif;  /* títulos */
+  --font-body: "Work Sans", system-ui, sans-serif;  /* texto corrido, botones, menú */
+
+}
+
+
+*, ::before, ::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-display);
+}
+
+.nav{
+  background-color: #fff;
+  height: 80px;
+  border-bottom: 1px solid #3a2a208d;
+}
+
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav__container{
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo{
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 400;
+}
+
+.nav__button{
+  background-color: var(--color-dark);
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.nav__list--container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 0;
+
+  
+}
+
+.nav__list{
+  top: 80px;
+  width: 100%;
+
+  border: 0;
+  list-style: none;
+
+  opacity: 0;
+  transform: translateY(-40px);
+
+  transition-property: opacity, transform, display;
+  transition-duration: .5s;
+  transition-behavior: allow-discrete;
+}
+
+.nav__list:popover-open{
+  opacity: 1;
+  transform: translate(0);
+
+  @starting-style{
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}
+
+.nav__link{
+  
+  a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+  }
+}
