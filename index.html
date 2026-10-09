@@ -12,54 +12,94 @@
 </head>
 <body>
 
-  <nav class="nav">
+  <nav class="nav ">
     <div class="nav__container container">
 
       <a href="#" class="nav__logo">
         <h2>Tueste Lento</h2>
       </a>
 
+    <div class="nav__show" popover id="menu-final">
+      <ul class="nav__list" >
 
-      <ul class="nav__list" popover id="menu">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Carta</a>
+        </li>
 
-        <div class="nav__list--container">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Comer</a>
+        </li>
 
-          <li class="nav__link">
-            <a href="#">Carta</a>
-          </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Beber</a>
+        </li>
 
-          <li class="nav__link">
-            <a href="#">Comer</a>
-          </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Ambiente</a>
+        </li>
 
-
-          <li class="nav__link">
-            <a href="#">Beber</a>
-          </li>
-
-
-          <li class="nav__link">
-            <a href="#">Ambiente</a>
-          </li>
-
-
-          <li class="nav__link">
-            <a href="#">Visítanos</a>
-          </li>
-        </div>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Vísitanos</a>
+        </li>
 
       </ul>
+    </div>
+    
 
-      <button class="nav__button" popovertarget="menu">
-        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
-          fill="#fff" viewBox="0 0 24 24" >
-          <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-          <path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"></path>
-          </svg>
-      </button>
+    <button class="nav__button" popovertarget="menu-final">
+      <svg class="open" xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+        fill="white" viewBox="0 0 24 24" >
+        <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+        <path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"></path>
+      </svg>
+
+      <svg class="close"  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+        fill="#fff" viewBox="0 0 24 24" >
+        <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+        <path d="m7.76 14.83-2.83 2.83 1.41 1.41 2.83-2.83 2.12-2.12.71-.71.71.71 1.41 1.42 3.54 3.53 1.41-1.41-3.53-3.54-1.42-1.41-.71-.71 5.66-5.66-1.41-1.41L12 10.59 6.34 4.93 4.93 6.34 10.59 12l-.71.71z"></path>
+      </svg>
+    </button>
 
     </div>
-  </nav>
+
+
+   
+  </nav>  
+  <header class="hero">
+      <figure class="hero__figure">
+        <img src="./assets/images/hero-latte-oscuro.webp" class="hero__img hero__img--first">
+
+        <img src="./assets/images/hero-latte.webp" class="hero__img hero__img--second">
+      </figure>
+
+      <div class="hero__content">
+
+        <article class="hero__texts">
+          <h2 class="hero__title">Disfruta tu café de la mañana</h2>
+          <p class="hero__copy">Café de especialidad, tostado en casa y servido sin prisa. Pasa por una taza, un desayuno o pan recién hecho.</p>
+          <a href="#" class="hero__link">Nuestra carta</a>
+        </article>
+
+        <div class="hero__change">
+
+          <div class="hero__line">
+            <input type="radio" name="imagen" id="line1">
+          </div>
+          <img src="./assets/images/hero-latte.webp" class="hero__line--img-1">
+
+
+          <div class="hero__line">
+            <input type="radio" name="imagen" id="line2">
+          </div>
+
+          <img src="./assets/images/hero-latte-oscuro.webp" class="hero__line--img-2">
+
+        </div>
+
+    </section>
+    
+
+  </header>
 
 </body>
 </html>
