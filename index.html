@@ -65,41 +65,126 @@
 
    
   </nav>  
+  
   <header class="hero">
-      <figure class="hero__figure">
-        <img src="./assets/images/hero-latte-oscuro.webp" class="hero__img hero__img--first">
 
-        <img src="./assets/images/hero-latte.webp" class="hero__img hero__img--second">
+      <figure class="hero__figure">
+
+        <img src="./assets/images/hero-latte-oscuro.webp" class="hero__img img--uno">
+
+        <img src="./assets/images/hero-latte.webp" class="hero__img img--dos">
+
       </figure>
 
-      <div class="hero__content">
+      <article class="hero__texts">
+        <h2 class="hero__title">Disfruta tu café de la mañana</h2>
 
-        <article class="hero__texts">
-          <h2 class="hero__title">Disfruta tu café de la mañana</h2>
-          <p class="hero__copy">Café de especialidad, tostado en casa y servido sin prisa. Pasa por una taza, un desayuno o pan recién hecho.</p>
-          <a href="#" class="hero__link">Nuestra carta</a>
-        </article>
+        <p class="hero__paragraph">Café de especialidad, tostado en casa y servido sin prisa. Pasa por una taza, un desayuno o pan recién hecho.</p>
 
-        <div class="hero__change">
-
-          <div class="hero__line">
-            <input type="radio" name="imagen" id="line1">
-          </div>
-          <img src="./assets/images/hero-latte.webp" class="hero__line--img-1">
+        <a href="#" class="hero__cta">Nuestra Carta</a>
 
 
-          <div class="hero__line">
-            <input type="radio" name="imagen" id="line2">
-          </div>
+        <div class="hero__controls">
+                    
 
-          <img src="./assets/images/hero-latte-oscuro.webp" class="hero__line--img-2">
+          <label for="control-uno" class="hero__slide hero__slide--uno">
+              <span class="hero__arrow hero__arrow--uno"></span>
+              <input type="radio" name="controles" id="control-uno">
+          </label>
+
+
+          <label for="control-dos" class="hero__slide hero__slide--dos">
+            <input type="radio" name="controles" id="control-dos">
+            <span class="hero__arrow hero__arrow--dos"></span>
+          </label>
+
 
         </div>
+      </article>
 
-    </section>
-    
 
   </header>
+
+  <main class="main">
+
+    <section class="about">
+
+      <article class="about__content about__content--uno container">
+
+         <figure class="about__figure">
+          <img src="./assets/images/comer-croissants.webp" class="about__img">
+        </figure>
+
+
+        <div class="about__text">
+          <h2 class="about__title">Comer.</h2>
+          <p class="about__info">Desayunos, comidas y pastelería artesanal</p>
+          <p class="about__paragraph">Panadería de masa madre, sándwiches y dulces del día. Todo se hornea en casa y sale por la mañana.</p>
+          <a href="#" class="about__cta">Ver desayunos</a>
+        </div>
+
+       
+        
+      </article>
+
+       <article class="about__content about__content--dos container">
+
+         <figure class="about__figure">
+          <img src="./assets/images/beber-latte-barrica.webp" class="about__img">
+        </figure>
+
+
+        <div class="about__text">
+          <h2 class="about__title">Beber.</h2>
+          <p class="about__info">Espresso, filtrados y bebidas frías</p>
+          <p class="about__paragraph">Del espresso de la casa a un V60 con el grano de la semana. Pregunta por el origen del día.</p>
+          <a href="#" class="about__cta">Ver la carta.</a>
+        </div>
+
+       
+        
+      </article>
+
+       <article class="about__content about__content--tres container">
+
+         <figure class="about__figure">
+          <img src="./assets/images/disfrutar-barista.webp" class="about__img">
+        </figure>
+
+
+        <div class="about__text">
+          <h2 class="about__title">Disfrutar..</h2>
+          <p class="about__info">Atención en barra y en mesa</p>
+          <p class="about__paragraph">Una barra abierta donde ver cómo se prepara tu café, conversar con quien lo hace y quedarte el tiempo que quieras.</p>
+          <a href="#" class="about__cta">Ver la carta.</a>
+        </div>
+
+       
+        
+      </article>
+
+    </section>
+
+    <section class="gallery container">
+      <h2 class="gallery__title">Nuestro ambiente</h2>
+
+      <div class="gallery__container">
+
+        <figure class="gallery__img gallery__img--uno">
+          <img src="./assets/images/galeria-chemex.webp" >
+        </figure>
+
+        <img src="./assets/images/galeria-espresso.webp" class="gallery__img gallery__img--dos">
+
+        <img src="./assets/images/galeria-filtrado.webp" class="gallery__img gallery__img--tres">
+
+        <img src="./assets/images/galeria-interior.webp" class="gallery__img gallery__img--cuatro">
+
+        <img src="./assets/images/galeria-latte-terrazo.webp" class="gallery__img gallery__img--cinco">
+      </div>
+    </section>
+
+  </main>
 
 </body>
 </html>
